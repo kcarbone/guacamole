@@ -116,3 +116,35 @@ go to repository on terminal
 paste command from github website  
 $ git remote add origin https://github.com/kcarbone/guacamole.git  
 $ git push -u origin master  
+
+to clone a collaborator's repository
+Don't put repositories into repositories you already have! 
+$ git clone https://github.com/cliuuu/guacamole.git chad-guac
+
+$ nano suggestions.txt
+$ git add suggestions.txt
+$ git commit -m "Adds serving suggestions"
+$ git push origin master
+
+To update my guac repository 
+cd gucamole 
+$ git pull origin master
+
+to find out what to pull from you can use:
+$ git remote -v
+
+resolving a failed push b/c conflict
+$ git pull origin master
+gives and error! merge failed 
+$ git status
+your branch and origin master have diverged
+open the file github tells you contains the conflict
+$ git add suggestions.txt
+$ git status
+$ git commit 
+$ git status
+$ git push origin master
+
+
+Sharing individual files that are under version control:
+https://gist.github.com/
